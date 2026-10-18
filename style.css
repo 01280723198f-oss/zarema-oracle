@@ -69,3 +69,86 @@ footer{max-width:1100px;margin:0 auto;padding:30px 20px 50px;border-top:1px soli
  .topbtn{padding:9px 14px;font-size:14px}
  .brand{font-size:19px}
 }
+/* ---- 18.10: навигация, продукты, гадания, СЕО-блоки ---- */
+.nav{display:flex;gap:22px}
+.nav a{color:var(--muted);text-decoration:none;font-size:15px;font-weight:600}
+.nav a:hover{color:var(--gold2)}
+.topbtns{display:flex;gap:10px;align-items:center}
+.ghost{color:var(--gold2);border:1px solid var(--gold);border-radius:999px;padding:9px 18px;text-decoration:none;font-weight:700;font-size:15px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+.btn.ghost{background:transparent;color:var(--gold2);border:1px solid var(--gold);box-shadow:none}
+.crumbs{margin-top:26px;font-size:13px;color:var(--muted)}
+.crumbs a{color:var(--muted)}
+.crumbs span{color:var(--gold)}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 22px;margin:0 0 20px}
+.toc summary{cursor:pointer;font-weight:700;color:var(--gold)}
+.toc ol{margin:10px 0 0;padding-left:20px}
+.toc a{color:var(--text);text-decoration:none}
+.sec{font-size:40px;margin:46px 0 8px}
+.sec-sub{color:var(--muted);margin:0 0 20px}
+.pageh{font-size:46px;margin:10px 0 26px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 22px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:7px 16px;color:var(--muted);text-decoration:none;font-size:14px}
+.chip:hover{border-color:var(--gold);color:var(--gold2)}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.pgrid.small2{grid-template-columns:repeat(2,1fr)}
+.ptile{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;text-decoration:none;color:var(--text);transition:transform .2s}
+.ptile:hover{transform:translateY(-4px);border-color:var(--gold)}
+.ptile img{width:100%;aspect-ratio:1200/630;object-fit:cover}
+.ptile div{padding:16px 20px 20px;display:flex;flex-direction:column;flex:1}
+.ptile h3{font-size:26px;margin:8px 0 6px}
+.ptile p{color:var(--muted);font-size:15px;line-height:1.5;margin:0 0 14px;flex:1}
+.badge{display:inline-block;align-self:flex-start;background:rgba(43,122,102,.45);color:#bfe8d9;border-radius:999px;padding:3px 12px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.price{font:700 26px/1 "Cormorant Garamond",serif;color:var(--gold2)}
+.more-link{color:var(--gold);font-size:14px;font-weight:700;margin-top:8px}
+.tgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.ttile{display:flex;gap:18px;align-items:center;background:linear-gradient(140deg,rgba(31,92,77,.55),rgba(59,31,69,.6));border:1px solid var(--gold);border-radius:18px;padding:18px;text-decoration:none;color:var(--text)}
+.ttile img{width:96px;border-radius:8px;flex:none;transform:rotate(-4deg)}
+.ttile h3{font-size:26px;margin:0 0 6px}
+.ttile p{margin:0 0 8px;color:var(--muted);font-size:14px;line-height:1.5}
+.pbanner{width:100%;border-radius:18px;margin:18px 0 0;border:1px solid var(--line)}
+.lead-price{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:-10px 0 26px}
+.lead-price b{font:700 30px "Cormorant Garamond",serif;color:var(--gold2)}
+.paybox{display:grid;grid-template-columns:1fr 1.3fr;gap:28px;align-items:center;margin:50px 0;padding:30px;border-radius:22px;background:linear-gradient(140deg,#3b1f45,#1f5c4d);border:1px solid var(--gold)}
+.paybox h3{font-size:30px;margin:6px 0}
+.paybox .kicker{margin:0;color:var(--gold);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.bigprice{font:700 46px/1 "Cormorant Garamond",serif;color:var(--gold2);margin:4px 0 0}
+.paybox .small{font-size:13px;color:var(--muted);margin-top:14px;line-height:1.5}
+.sticky-buy{display:none}
+.tool{background:var(--card);border:1px solid var(--gold);border-radius:22px;padding:26px;margin:0 0 30px;text-align:center}
+.tool-hint{color:var(--muted);margin:0 0 14px}
+.q{width:100%;max-width:520px;background:var(--bg2);border:1px solid var(--line);color:var(--text);border-radius:12px;padding:12px 16px;font:16px Manrope,sans-serif;margin-bottom:18px}
+.themes{display:flex;justify-content:center;gap:10px;margin-bottom:18px}
+.themes button{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:8px 18px;font:600 15px Manrope,sans-serif;cursor:pointer}
+.themes button.on{border-color:var(--gold);color:var(--gold2);background:rgba(216,178,106,.1)}
+.deck{position:relative;width:150px;height:230px;border:0;background:none;cursor:pointer;margin:6px auto 4px;display:block}
+.deck span{position:absolute;inset:0;border-radius:14px;border:2px solid var(--gold);background:radial-gradient(circle,rgba(233,199,126,.35) 2px,transparent 3px) 0 0/22px 22px,radial-gradient(circle at 50% 50%,#5a2a66,#2a1033 75%)}
+.deck span:nth-child(1){transform:rotate(-6deg) translate(-8px,4px)}
+.deck span:nth-child(2){transform:rotate(4deg) translate(6px,2px)}
+.deck:hover span:nth-child(3){transform:translateY(-8px)}
+.deck span:nth-child(3){transition:transform .2s}
+.deck.used{opacity:.35;cursor:default}
+.result{display:flex;gap:24px;align-items:flex-start;text-align:left;margin-top:22px;animation:rise .5s ease}
+.result img{width:170px;border-radius:12px;border:2px solid var(--gold);flex:none}
+.result h3{font-size:30px;margin:4px 0 8px}
+.result p{margin:0 0 10px}
+.ans{font:700 44px/1 "Cormorant Garamond",serif;margin:0 0 4px!important}
+.ans.yes{color:#8fe0b8}.ans.no{color:#f2a0a0}.ans.wait{color:var(--gold2)}.ans.day{font-size:20px;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;font-family:Manrope}
+.adv{color:var(--gold2)}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.result{animation:none}}
+.fcols{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-bottom:16px}
+.fcols b{color:var(--text)}
+.fcols p{margin:6px 0 0;line-height:1.9}
+footer .small{font-size:13px}
+@media (max-width:900px){.nav{display:none}.pgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:720px){
+ .pgrid,.pgrid.small2,.tgrid,.fcols,.paybox{grid-template-columns:1fr}
+ .sec{font-size:32px}
+ .ghost{display:none}
+ .btns .btn{width:100%;text-align:center}
+ .result{flex-direction:column;align-items:center;text-align:center}
+ .sticky-buy{display:block;position:fixed;left:12px;right:12px;bottom:12px;z-index:20;text-align:center;background:linear-gradient(135deg,var(--gold),#b98c42);color:#1a0f1d;font-weight:700;text-decoration:none;border-radius:999px;padding:15px;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+ .product footer,.product+.sticky-buy+footer{padding-bottom:90px}
+ body:has(.sticky-buy) footer{padding-bottom:90px}
+}
