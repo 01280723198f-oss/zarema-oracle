@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://01280723198f-oss.github.io/zarema-oracle/sitemap.xml
